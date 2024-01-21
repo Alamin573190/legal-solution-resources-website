@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>legal-related-website</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- for font awosome -->
-    <script src="https://kit.fontawesome.com/a24099b832.js" crossorigin="anonymous"></script>
-    <!-- font style -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
-<!-- tailwind custom colore -->
-<script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>legal-related-website</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- for font awosome -->
+  <script src="https://kit.fontawesome.com/a24099b832.js" crossorigin="anonymous"></script>
+  <!-- font style -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Poppins:wght@200;300;400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- tailwind custom colore -->
+  <script>
     tailwind.config = {
       theme: {
         extend: {
@@ -26,20 +29,77 @@
         }
       }
     }
-    </script>
-    <style>
-
-    </style>
+  </script>
+  <style>
+    .font-poppins-EB-garamond {
+      font-family: 'EB Garamond', serif;
+      /* font-family: 'Poppins', sans-serif; */
+    }
+  </style>
 </head>
-<body>
-    <header>
 
-    </header>
-    <main>
+<body class="font-poppins-EB-garamond">
+  <header class="container max-w-[1100px] mx-auto">
+    <!-- nav part -->
+    <div class="navbar bg-base-100">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a>Home</a></li>
+            <li><a>Service <i class="fa-solid fa-chevron-right"></i> </a> </li>
+            <li><a> Coses<i class="fa-solid fa-chevron-right"></i></a></li>
+            <li><a>Blog <i class="fa-solid fa-chevron-right"></i></a></li>
+            
+            <li><a>Contact Us <i class="fa-solid fa-chevron-right"></i></a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost font-bold text-4xl font-[EB Garamond] ">Justice</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a>Home</a></li>
+            <li><a>Service <i class="fa-solid fa-chevron-right"></i></a></li>
+            <li><a> Coses <i class="fa-solid fa-chevron-right"></i></a></li>
+            <li><a>Blog <i class="fa-solid fa-chevron-right"></i></a></li>
+            
+            <li><a>Contact Us <i class="fa-solid fa-chevron-right"></i></a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a class="btn text-white rounded-xl bg-[#B68C5A]">Free Consultation</a>
+      </div>
+    </div>
+    <!-- hero part -->
+    <div class="hero min-h-screen my-10 rounded-2xl" style=" background-image: url('./images/banner.png');">
+      <div class="hero-overlay bg-opacity-60  "></div>
+      <div class=" text-center ">
+        <div class="w-3/4 mx-auto my-10">
+          <h1 class="mb-5 text-4xl lg:text-6xl font-bold text-[#FFF] ">We Provide Effective <br> Legal Solutions</h1>
+          <p class="mb-5 text-white">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+          
+           <div class="space-x-4 ">
+            <input class="pr-24 pl-5 py-3 rounded-md text-start" type="text" placeholder="Search your services">
         
-    </main>
-    <footer>
+            <button class="mt-5 btn bg-[#B68C5A] border-0">Get Started</button>
+           </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <!-- practice area -->
+    <section>
 
-    </footer>
+
+    </section>
+
+  </main>
+  <footer>
+
+  </footer>
 </body>
+
 </html>
